@@ -88,7 +88,7 @@ public class WebFilter implements Filter {
         @Override
         public ServletInputStream getInputStream() throws IOException {
             Passport passport = Passport.threadLocal.get();
-            return new WrapServletInputStream((ByteArrayInputStream) IOUtils.toInputStream(passport.getRequestBody()));
+            return new WrapServletInputStream((ByteArrayInputStream) IOUtils.toInputStream(passport.getRequestBody(),"utf-8"));
         }
     }
 }
