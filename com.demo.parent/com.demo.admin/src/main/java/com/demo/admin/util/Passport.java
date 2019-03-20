@@ -16,16 +16,6 @@ public class Passport implements Serializable {
 
     private String ip;
 
-    private Long orderId;
-
-    public Long getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
-
     public String getIp() {
         return ip;
     }
