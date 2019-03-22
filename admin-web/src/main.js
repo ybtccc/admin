@@ -9,7 +9,7 @@ import 'iview/dist/styles/iview.css'
 import './index.less'
 import '@/assets/icons/iconfont.css'
 
-require('@/mock')
+// require('@/mock')
 
 Vue.use(iView, {
   i18n: (key, value) => i18n.t(key, value)
